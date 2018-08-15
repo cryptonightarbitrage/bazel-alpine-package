@@ -1,7 +1,7 @@
 # Maintainer: David Ostrovsky <david@ostrovsky.org>
 
 pkgname=bazel
-pkgver=0.15.2
+pkgver=0.16.1
 pkgrel=0
 pkgdesc='Correct, reproducible, and fast builds for everyone'
 arch="all"
@@ -16,8 +16,8 @@ options="!distcc !strip"
 source="https://github.com/bazelbuild/bazel/releases/download/${pkgver}/bazel-${pkgver}-dist.zip
         https://github.com/bazelbuild/bazel/releases/download/${pkgver}/bazel-${pkgver}-dist.zip.sig"
 
-sha512sums="c1257fc7eeadc8e76fbd52be393d07161e6eadf7111e09ee9a7f9bf6d3b7e848e9b193a3b66a13e99c09a42e577404cb3a5f1fc3819f35436a36149dbb1ea365  bazel-0.15.2-dist.zip
-d81fd679b9efbd334a32ed4d32561deed7aace24f12462a5860d3fc7b4fc2dfa3614a23f4772e54d06031b364790e91df936d34b1f881ed4067234a8d84cc0b9  bazel-0.15.2-dist.zip.sig"
+sha512sums="89cefed69df1cae7076673900546199427fab3508aad1f0347b9da38153b6b1566b19a4c205055f41ca431fd9444ec772c86bc32fbff0da0485a5e5f11728932  bazel-0.16.1-dist.zip
+0efadd70c6b671ab64ac742c46c15e45bee9a412c6d67d4941fc9657747eed4b29c643477475fa59b699c481b46c217fed9fc1892d42a93ef1f0d7259209dc6f  bazel-0.16.1-dist.zip.sig"
 
 build() {
   ./compile.sh
